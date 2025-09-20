@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header role="banner" aria-label="Encabezado principal">
+        <h1>Aplicación CRUD de Usuarios</h1>
+    </header>
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="view/lista.php">Listar Usuarios</a></li>
+            <li><a href="view/formulario.php">Registrar Usuario</a></li>
+        </ul>
+    </nav>
+    <section role="main" aria-label="Formulario de registro">
+        <h2>Registrar Usuario</h2>
+        <form action="controller/registro.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required aria-label="Nombre del usuario">
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+    <footer role="contentinfo" aria-label="Pie de página">
+        <p>&copy; 2025 CRUD Usuarios - Proyecto MVC</p>
+    </footer>
+</body>
+</html>
